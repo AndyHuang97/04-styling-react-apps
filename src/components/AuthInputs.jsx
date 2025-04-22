@@ -23,7 +23,9 @@ export default function AuthInputs() {
   return (
     <div id="auth-inputs">
       <div className="controls">
-        <p>
+        <p className="paragraph"
+        // class paragraph is scoped to Header with import, so it's not accessible here
+        >
           <label className={`label ${emailNotValid ? 'invalid' : undefined}`}>Email</label>
           <input
             type="email"
